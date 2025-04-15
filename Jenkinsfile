@@ -31,6 +31,10 @@ pipeline {
                 echo "doing delivery stuff.."
                 '''
             }
+            post {
+                success{ echo "Post success "}
+		failure { echo "Post failed" }
+            }
         }
     }
 }
